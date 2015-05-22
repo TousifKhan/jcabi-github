@@ -34,7 +34,7 @@ you can use in unit tests, for example:
 ```java
 public class FooTest {
   public void submitsCommentToGithubIssue() {
-    final Repo repo = new MkGithub().repos().create(//comment
+    final Repo repo = new MkGithub().repos().create(//comments
       Json.createObjectBuilder().add("name", "test").build()
     );
     final Issue issue = repo.issues().create("how are you?", "");
